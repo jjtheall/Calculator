@@ -6,9 +6,9 @@ public class Calculator {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter the first number: ");
-        int num1 = sc.nextInt();
+        double num1 = sc.nextDouble();
         System.out.println("Enter the second number: ");
-        int num2 = sc.nextInt();
+        double num2 = sc.nextDouble();
         sc.nextLine();
         System.out.println("Add, subtract, multiply, or divide? (Enter \"+\", \"-\", \"*\", or \"/\")");
         String operation = sc.nextLine();
