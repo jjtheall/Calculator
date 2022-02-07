@@ -10,13 +10,17 @@ public class Calculator {
         System.out.println("Enter the second number: ");
         int num2 = sc.nextInt();
         sc.nextLine();
-        System.out.println("Add or subtract? (Enter \"+\" or \"-\")");
+        System.out.println("Add, subtract, multiply, or divide? (Enter \"+\", \"-\", \"*\", or \"/\")");
         String operation = sc.nextLine();
         if(operation.equals("+")){
             System.out.println(num1 + num2);
         }
-        else{
+        else if(operation.equals("-")){
             System.out.println(num1 - num2);
         }
+        else if(operation.equals("*")){
+            System.out.println(num1 * num2);
+        }
+        else System.out.println(num1/num2);
     }
 }
