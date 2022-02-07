@@ -21,6 +21,11 @@ public class Calculator {
         else if(operation.equals("*")){
             System.out.println(num1 * num2);
         }
-        else System.out.println(num1/num2);
+        else {
+            if(num2 == 0){
+                System.out.println("Error: divide by zero");
+            }
+            else System.out.println(num1/num2);
+        }
     }
 }
